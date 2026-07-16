@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALPHA EMPIRE</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(-45deg,#000000,#16001f,#430000,#00162d);
+background-size:400% 400%;
+animation:bg 10s ease infinite;
+overflow:hidden;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.card{
+width:90%;
+max-width:750px;
+padding:40px;
+background:rgba(0,0,0,.75);
+border:2px solid #ff0055;
+border-radius:20px;
+box-shadow:0 0 35px #ff0055;
+text-align:center;
+animation:pop 1s;
+}
+
+@keyframes pop{
+from{
+transform:scale(.5);
+opacity:0;
+}
+to{
+transform:scale(1);
+opacity:1;
+}
+}
+
+h1{
+font-size:55px;
+color:#ff0055;
+text-shadow:0 0 20px #ff0055;
+margin-bottom:25px;
+}
+
+.message{
+font-size:30px;
+font-weight:bold;
+color:white;
+line-height:1.8;
+text-shadow:0 0 12px cyan;
+}
+
+.highlight{
+color:#00ffff;
+}
+
+.warning{
+color:#ff3030;
+}
+
+.footer{
+margin-top:30px;
+font-size:22px;
+color:gold;
+animation:blink 1s infinite;
+}
+
+@keyframes blink{
+50%{
+opacity:.3;
+}
+}
+
+button{
+margin-top:30px;
+padding:15px 40px;
+font-size:20px;
+font-weight:bold;
+border:none;
+border-radius:50px;
+background:#ff0055;
+color:white;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:#ff2f74;
+transform:scale(1.08);
+}
+
+#popup{
+display:none;
+margin-top:25px;
+font-size:28px;
+font-weight:bold;
+color:#00ffcc;
+text-shadow:0 0 15px #00ffcc;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>👑 ALPHA EMPIRE 👑</h1>
+
+<div class="message">
+
+🔥 ALPHA EMPIRE KI ENTRY HO CHUKI HAI 😍
+
+<br><br>
+
+<span class="warning">
+EGO SAMBHAL KE REHNA ⚠️
+</span>
+
+<br><br>
+
+NEW GANG
+
+<br>
+
+<span class="highlight">
+ALPHA EMPIRE
+</span>
+
+<br>
+
+ROASTING LEVEL BAHUT KHATARNAK HAI 💋🔥
+
+</div>
+
+<button onclick="showMessage()">
+ENTER EMPIRE 👑
+</button>
+
+<div id="popup">
+WELCOME TO ALPHA EMPIRE ❤️‍🔥
+</div>
+
+<div class="footer">
+POWER • LOYALTY • RESPECT
+</div>
+
+</div>
+
+<script>
+function showMessage(){
+document.getElementById("popup").style.display="block";
+}
+</script>
+
+</body>
+</html>
